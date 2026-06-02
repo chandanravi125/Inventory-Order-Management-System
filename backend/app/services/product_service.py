@@ -1,5 +1,5 @@
 from fastapi import HTTPException
-from app.models.product import Product
+from ..models.product import Product
 
 
 def create_product(db, product_data):

@@ -1,5 +1,5 @@
 from fastapi import HTTPException
-from app.models.customer import Customer
+from ..models.customer import Customer
 
 
 def create_customer(db, customer_data):

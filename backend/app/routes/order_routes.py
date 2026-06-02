@@ -2,13 +2,13 @@ from fastapi import APIRouter
 from fastapi import Depends
 from sqlalchemy.orm import Session
 
-from app.core.database import get_db
+from ..core.database import get_db
 
-from app.schemas.order import (
+from ..schemas.order import (
     OrderCreate
 )
 
-from app.services.order_service import (
+from ..services.order_service import (
     create_order,
     get_orders,
     get_order,

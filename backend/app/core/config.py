@@ -5,7 +5,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str
 
     class Config:
-        env_file = "app/.env"
+        env_file = "backend/app/.env"
 
 
 settings = Settings()

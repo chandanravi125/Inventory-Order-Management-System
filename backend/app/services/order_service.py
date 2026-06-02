@@ -1,8 +1,8 @@
 from fastapi import HTTPException
 
-from app.models.order import Order
-from app.models.product import Product
-from app.models.customer import Customer
+from ..models.order import Order
+from ..models.product import Product
+from ..models.customer import Customer
 
 
 def create_order(db, order_data):

@@ -2,11 +2,11 @@ from fastapi import APIRouter
 from fastapi import Depends
 from sqlalchemy.orm import Session
 
-from app.core.database import get_db
+from ..core.database import get_db
 
-from app.schemas.product import ProductCreate, ProductUpdate
+from ..schemas.product import ProductCreate, ProductUpdate
 
-from app.services.product_service import (
+from ..services.product_service import (
     create_product, get_products,
     get_product, update_product,
     delete_product )

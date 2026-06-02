@@ -3,7 +3,7 @@ from sqlalchemy import Integer
 from sqlalchemy import Float
 from sqlalchemy import ForeignKey
 
-from app.core.database import Base
+from ..core.database import Base
 
 
 class Order(Base):

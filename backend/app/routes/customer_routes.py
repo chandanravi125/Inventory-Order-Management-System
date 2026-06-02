@@ -2,13 +2,13 @@ from fastapi import APIRouter
 from fastapi import Depends
 from sqlalchemy.orm import Session
 
-from app.core.database import get_db
+from ..core.database import get_db
 
-from app.schemas.customer import (
+from ..schemas.customer import (
     CustomerCreate
 )
 
-from app.services.customer_service import (
+from ..services.customer_service import (
     create_customer,
     get_customers,
     get_customer,
